@@ -6,10 +6,15 @@
   <title>Lilly Says</title>
   <link rel='stylesheet' type='text/css' href='./styles/reset.css'>
   <link rel='stylesheet' type='text/css' href='./styles/style.css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
   <header>
   <h1>Lilly Says</h1>
+  <ul>
+  <li><button class="button" id="home" onclick="location.href='home.html';">HOME</button></li>
+  <li><button class="button" id="start" onclick="roundOne()" >START</button></li>
+  </ul>
   <div class ="container clearfix">
     <div class="color" id="blue" data-box-num="1">
     </div>
@@ -21,5 +26,7 @@
     </div>
   </div>
 </header>
+<script src="jquery.js"></script>
+<script src="main.js"></script>
 </body>
 </html>

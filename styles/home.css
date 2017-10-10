@@ -23,6 +23,7 @@ background: rgba(121, 144, 194, 0.7);
   margin-top: 10px;
   padding: 10px;
   outline-style: dotted;
+  line-height: 2;
 }
 
 .button {
