@@ -1,5 +1,5 @@
 body {
-  background: rgba(156, 180, 180, 0.4);
+  background: rgba(121, 144, 194, 0.4);
   text-align: center;
   background-size: cover;
   color: white;
@@ -7,12 +7,13 @@ body {
 }
 
 h1 {
-  background: rgba(156, 180, 180, 0.7);
+  background: rgba(121, 144, 194, 0.7);
   margin: auto;
   font-size: 75px;
   font-weight: bold;
   margin-top: 10px;
   padding: 10px;
+  outline-style: dotted;
 }
 
 .container {
@@ -21,7 +22,7 @@ h1 {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 45px;
+  margin-top: 20px;
  /* position: relative;*/
   transform-origin: bottom left;
 }
@@ -33,6 +34,7 @@ h1 {
   border-radius: 300px 0 0 0;
   box-sizing: border-box;
   text-align: center;
+  border: 6px solid white;
 }
 
 #blue {
@@ -65,7 +67,45 @@ h1 {
   clear: both;
 }
 
+.button {
+  margin-top: 20px;
+  font-size: 40px;
+  font-family: Trebuchet MS, sans-serif;
+  background: rgba(156, 180, 180, 0.2);
+  border-radius: 20%;
+  color: white;
+}
+
+button:hover {
+  cursor:pointer;
+}
+
+#blue:hover {
+  cursor:pointer;
+  background: rgba(82, 130, 233, 0.3)
+}
+
+#green:hover {
+  cursor:pointer;
+  background: rgba(31, 183, 99, 0.3)
+}
+
+#yellow:hover {
+  cursor:pointer;
+  background: rgba(229, 227, 106, 0.3);
+}
+
+#red:hover {
+  cursor:pointer;
+  background: rgba(226, 89, 96, 0.3)
+}
+
+li {
+  display: inline;
+}
+
 /*Reference List:
 For Colors: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool
 For How to Position divs within the circle: https://stackoverflow.com/questions/14184494/segments-in-a-circle-using-css3,
-https://davidwalsh.name/css-circles*/
+https://davidwalsh.name/css-circles, https://stackoverflow.com/questions/1098219/how-to-make-child-divs-always-fit-inside-parent-div
+Fonts: https://www.w3.org/Style/Examples/007/fonts.en.html*/

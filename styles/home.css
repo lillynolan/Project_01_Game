@@ -1,0 +1,39 @@
+body {
+  background: rgba(121, 144, 194, 0.4);
+  text-align: center;
+  background-size: cover;
+  color: white;
+  font-family: Trebuchet MS, sans-serif;
+}
+
+h1 {
+  background: rgba(121, 144, 194, 0.7);
+  margin: auto;
+  font-size: 75px;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 10px;
+  outline-style: dotted;
+}
+p {
+background: rgba(121, 144, 194, 0.7);
+  margin: auto;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 10px;
+  outline-style: dotted;
+}
+
+.button {
+  margin-top: 20px;
+  font-size: 40px;
+  font-family: Trebuchet MS, sans-serif;
+  background: rgba(156, 180, 180, 0.2);
+  border-radius: 20%;
+  color: white;
+}
+
+button:hover {
+  cursor:pointer;
+}
