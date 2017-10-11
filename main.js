@@ -8,6 +8,8 @@ let playerArr = [];
 let i = 0;
 let score = 0;
 let grabScore = document.getElementById("score");
+let errorSound = new Audio("beep-10.mp3"); //source: https://www.soundjay.com/button/sounds/beep-10.mp3
+let nextSound = new Audio("button-14.mp3"); //source: https://www.soundjay.com/button/sounds/button-14.mp3
 
 let start = document.getElementById("start");
 start.addEventListener("click", startGame);
@@ -68,9 +70,11 @@ function playerTurn() {
     if (check()) {
       score++;
       grabScore.innerHTML = "Score:" + " " + score;
+      nextSound.play();
       nextLevel();
       }
     else {
+      errorSound.play();
       alert("You Lose!");
       location.reload();
     }
@@ -92,6 +96,7 @@ for (let i = 0; i < playerArr.length; i++) {
 // Reference Links
 // Thought about stoplight animation for how to get the divs to light up,
 // https://stackoverflow.com/questions/43594730/javascript-traffic-light,
-//Clear intervals: https://www.w3schools.com/jsref/met_win_setinterval.asp
+//Clear intervals: https://www.w3schools.com/jsref/met_win_setinterval.asp,
+//How to input sound: https://stackoverflow.com/questions/1933969/sound-effects-in-javascript-html5
 
 

@@ -15,6 +15,7 @@ h1 {
   padding: 10px;
   outline-style: dotted;
 }
+
 p {
 background: rgba(121, 144, 194, 0.7);
   margin: auto;
@@ -31,7 +32,8 @@ background: rgba(121, 144, 194, 0.7);
   font-size: 40px;
   font-family: Trebuchet MS, sans-serif;
   background: rgba(156, 180, 180, 0.2);
-  border-radius: 20%;
+  border-radius: 40%;
+  padding: 10px;
   color: white;
 }
 
