@@ -64,18 +64,18 @@ for (let i = 0; i < color.length; i++) {
 function playerTurn() {
   let id = this.id;
   console.log(id);
-  playerArr.push(document.getElementById(id));
+  playerArr.push(document.getElementById(id)); //adding the id from each color div to empty player array
   console.log(playerArr);
   if (playerArr.length === computerTurn1.length) { //when the player array length is equal to the computer array run the check
-    if (check()) {
-      score++;
-      grabScore.innerHTML = "Score:" + " " + score;
-      nextSound.play();
-      nextLevel();
+    if (check()) { //if the check is true do the following
+      score++; //increase score by one
+      grabScore.innerHTML = "Score:" + " " + score; //add the incremental text score
+      nextSound.play(); //play sound
+      nextLevel(); //run function next level to add one more randomized element to array
       }
     else {
       errorSound.play();
-      alert("You Lose!");
+      alert("You Lose!"); //lose scenario
       location.reload();
     }
   }
