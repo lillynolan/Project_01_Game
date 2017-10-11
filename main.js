@@ -6,12 +6,15 @@ let color = document.getElementsByClassName("color");
 let computerTurn1 = [blue, green, yellow]
 let playerArr = [];
 let i = 0;
+let score = 0;
+let grabScore = document.getElementById("score");
 
 let start = document.getElementById("start");
 start.addEventListener("click", startGame);
 
+let interval;
 function startGame() {
-setInterval(computerRound, 700);
+interval = setInterval(computerRound, 700);//every 700ms runs computeround
 }
 
 function removeLight() {
@@ -22,14 +25,14 @@ function removeLight() {
 }
 
 function computerRound() {
-  removeLight()//turning off every 700 ms
-  window.setTimeout( () => {//wrapping in a function thats called every 300ms, delaying the highlight
-    $(computerTurn1[i]).addClass('highlight');
-    i++;
-    if (i === computerTurn1.length -1) { //when it accesses the last one, turns off interval
-      clearInterval();//turn off the interval
+  removeLight()//
+  window.setTimeout( () => {//function body for anonymous function
+    $(computerTurn1[i]).addClass('highlight');//adding the class
+    i++;//incrementing i each time
+    if (i === computerTurn1.length + 1) { //when its ran on the first time, stops after removelight bc no lights on on, so +1 fixes it
+      clearInterval(interval);//pass interval as variable to get it to stop
     }
-  }, 300);
+  }, 300);//every 300ms adds highlight, turning the light on
 }
 
 function nextLevel() {
@@ -45,9 +48,6 @@ function nextLevel() {
   }
   else if (num === 4) {
     computerTurn1.push(red)
-  }
-  else if (computerTurn1.length === 14) {
-    console.log("You Win!")
   }
   i = 0;
   playerArr = [];
@@ -66,6 +66,8 @@ function playerTurn() {
   console.log(playerArr);
   if (playerArr.length === computerTurn1.length) { //when the player array length is equal to the computer array run the check
     if (check()) {
+      score++;
+      grabScore.innerHTML = "Score:" + " " + score;
       nextLevel();
       }
     else {

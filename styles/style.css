@@ -72,8 +72,10 @@ h1 {
   font-size: 40px;
   font-family: Trebuchet MS, sans-serif;
   background: rgba(156, 180, 180, 0.2);
-  border-radius: 20%;
+  border-radius: 40%;
   color: white;
+  text-transform: uppercase;
+  padding: 10px;
 }
 
 button:hover {
@@ -98,26 +100,30 @@ button:hover {
 
 #blue:hover {
   cursor:pointer;
-  background-color: rgba(82, 130, 233, 0.3);
+  background-color: rgba(82, 130, 233, 0.6);
 }
 
 #green:hover {
   cursor:pointer;
-  background-color: rgba(31, 183, 99, 0.3);
+  background-color: rgba(31, 183, 99, 0.6);
 }
 
 #yellow:hover {
   cursor:pointer;
-  background-color: rgba(229, 227, 106, 0.3);
+  background-color: rgba(229, 227, 106, 0.6);
 }
 
 #red:hover {
   cursor:pointer;
-  background-color: rgba(226, 89, 96, 0.3);
+  background-color: rgba(226, 89, 96, 0.6);
 }
 
 li {
   display: inline;
+}
+
+.score {
+  font-size: 13px;
 }
 
 /*Reference List:
