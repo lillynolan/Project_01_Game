@@ -80,14 +80,30 @@ button:hover {
   cursor:pointer;
 }
 
+#blue.highlight {
+  background-color: rgba(82, 130, 233, 0.1);
+}
+
+#red.highlight {
+  background-color: rgba(226, 89, 96, 0.1);
+}
+
+#yellow.highlight {
+  background-color: rgba(229, 227, 106, 0.1);
+}
+
+#green.highlight {
+  background-color: rgba(31, 183, 99, 0.1);
+}
+
 #blue:hover {
   cursor:pointer;
-  background-color: rgba(82, 130, 233, 0.3)
+  background-color: rgba(82, 130, 233, 0.3);
 }
 
 #green:hover {
   cursor:pointer;
-  background-color: rgba(31, 183, 99, 0.3)
+  background-color: rgba(31, 183, 99, 0.3);
 }
 
 #yellow:hover {
@@ -97,10 +113,8 @@ button:hover {
 
 #red:hover {
   cursor:pointer;
-  background-color: rgba(226, 89, 96, 0.3)
+  background-color: rgba(226, 89, 96, 0.3);
 }
-
-
 
 li {
   display: inline;
