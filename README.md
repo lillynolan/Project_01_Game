@@ -14,14 +14,18 @@ Technologies Used:
 Approach Taken:
 - Started with CSS elements like background color and heading tags
 - Created the container to mimic the game board of Simon Says
-- Used one containing div of a circle
+- Used one container div to hold the circle
 - Then created 4 child elements with the same class but different ids to represent the colors
-- Each of the child elements are a square that is 50% of the cotaining with and height, with one edge having a border radius equivalent to half the height of the container 
+- Each of the child elements are a square that is 50% of the cotaining width and height, with one edge having a border radius equivalent to half the height of the container 
 - Each of the child elements are rotated at a 90 degree angle to represent a circle in 4 different parts
 - Styled each of the child elements to match their corresponding colors 
 - Added hover features to simulate pressing buttons for the game 
 - Moved to the core aspects of the javascript 
-
+- Started with start game function and start button
+- Then thought through what the "first action" on the page would need to be, the computers turn of highlighting the pattern
+- Used jQuery to remove and add the highlight class through each item in the set first turn array
+- Then created the players turn by adding a click event to each color and then pushed the associated id of the color into an array
+- created check functino comparison for the player array and computer array where if the entire array did not match then it would be false (you lose), if it was true then it would run the next level function adding a random number 1-4 representing each color to the computers turn array
 
 Wireframes:
 -   Instructions Page
@@ -65,7 +69,7 @@ How-to-use instructions:
 - the player loses if the pattern entered is not the same as the computer's
 
 Unsolved problems:
--
+-Hopefully not many, but one thing I was trying to figure out, but doesn't break my game, is that the mouse if on the board while the computer's turn is playing takes the hover/highlight effect, so it can be hard to tell if the color underneath is lighting up. The way I tried to solve this was to change the opacity of the highlight hover background to something much more subtle than the light up effect for the computer's turn. 
 
 ___PROPOSAL___
 Game Structure

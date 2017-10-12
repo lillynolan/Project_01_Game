@@ -83,7 +83,7 @@ function playerTurn() {
 
 function check() {
 for (let i = 0; i < playerArr.length; i++) {
-// index in the array, grp of elements
+// for loop, start and end of playerArr length, incrementing I to go through the array
   if (playerArr[i].id != computerTurn1[i].id) {
   return false; //if ids in player array does not equal computer array return false
   }
