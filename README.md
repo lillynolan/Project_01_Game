@@ -3,8 +3,8 @@
 <br>Website: clerk-apprenticeship-73038.bitballoon.com
 -   like the idea of testing someone’s memory
 -   could be used for alternate purposes other than just playing a game
-        o   maybe testing a concussion 
-        o   general tiredness/alertness level
+        <br>o   testing a concussion 
+        <br>o   general tiredness/alertness level
 
 Technologies Used:
 - HTML - used HTML to give structure to the game
