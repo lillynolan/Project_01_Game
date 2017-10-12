@@ -30,17 +30,17 @@ Approach Taken:
 
 Wireframes:
 -   Instructions Page
-    o List out the instructions in clear text
-    o Button to enter game arena 
+    <br>o List out the instructions in clear text
+    <br>o Button to enter game arena 
 
 -   Game Page
-    o   create start button to set off the game
-    o   create home button to return to instructions
-    o   keep score, every time the user gets a pattern right
-    o   if you get a pattern correct, proceed to next level, score increases by 1
-    o   set up 4 objects that each have a highlight event & array associated with them to store into specific patterns 
-    o   have the patterns increasingly get longer when the user gets the pattern correct
-    o   if users input is === lilly’s array then continue if != trigger you lose 
+    <br>o   create start button to set off the game
+    <br>o   create home button to return to instructions
+    <br>o   keep score, every time the user gets a pattern right
+    <br>o   if you get a pattern correct, proceed to next level, score increases by 1
+    <br>o   set up 4 objects that each have a highlight event & array associated with them to store into specific patterns 
+    <br>o   have the patterns increasingly get longer when the user gets the pattern correct
+    <br>o   if users input is === lilly’s array then continue if != trigger you lose 
 
 User Stories:
 - Open up Lilly Says
